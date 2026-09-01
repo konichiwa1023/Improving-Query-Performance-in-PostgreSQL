@@ -1,0 +1,8 @@
+-- Climate by country with Olympian athletes
+SELECT country
+  , temp_06
+  , precip_06
+FROM climate
+WHERE region = 'Africa'
+AND olympic_cc IN (SELECT DISTINCT country_code FROM athletes_wint)
+ORDER BY temp_06;
