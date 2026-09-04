@@ -1,0 +1,4 @@
+SELECT COUNT(*)
+FROM athletes_wint 
+WHERE age = 11
+OR age = 12
