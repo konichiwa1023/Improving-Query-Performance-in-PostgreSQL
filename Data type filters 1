@@ -1,0 +1,6 @@
+SELECT games
+  , name
+  , age
+FROM athletes_wint
+WHERE games IN ('1960 Winter', '2010 Winter')
+ORDER BY games;
