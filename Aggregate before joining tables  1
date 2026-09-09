@@ -1,0 +1,6 @@
+-- Count the number of athletes by country
+SELECT country_code
+  , year
+  , COUNT(athlete_id) AS no_athletes
+FROM athletes
+GROUP BY country_code, year;
