@@ -1,0 +1,6 @@
+SELECT year
+  , season
+  , COUNT(DISTINCT athlete_id) AS no_athletes
+FROM athletes
+WHERE country_code = 'RSA'
+GROUP BY year, season
