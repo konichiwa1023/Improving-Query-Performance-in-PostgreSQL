@@ -1,0 +1,3 @@
+SELECT DISTINCT table_type
+FROM information_schema.tables
+WHERE table_catalog = 'olympics_aqi'; 
