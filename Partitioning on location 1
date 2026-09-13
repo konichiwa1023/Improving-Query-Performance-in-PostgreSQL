@@ -1,0 +1,4 @@
+EXPLAIN
+SELECT * 
+FROM daily_aqi
+WHERE state_code = 15; -- Hawaii state code
