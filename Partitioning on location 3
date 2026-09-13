@@ -1,0 +1,5 @@
+SELECT county_name
+  , aqi
+  , category
+  , aqi_date
+FROM daily_aqi_partitioned
