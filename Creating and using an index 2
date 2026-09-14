@@ -1,0 +1,6 @@
+CREATE INDEX defining_parameter_index
+ON daily_aqi (defining_parameter);
+
+SELECT indexname
+FROM pg_indexes
+WHERE tablename = 'daily_aqi';
