@@ -1,0 +1,4 @@
+SELECT *
+FROM pg_stats
+WHERE tablename = 'daily_aqi'
+AND attname = 'category';
