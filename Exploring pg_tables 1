@@ -1,0 +1,3 @@
+SELECT relhasindex
+FROM pg_class  -- 
+WHERE relname = 'daily_aqi';
