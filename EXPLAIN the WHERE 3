@@ -1,0 +1,5 @@
+EXPLAIN
+SELECT *
+FROM daily_aqi_partitioned
+WHERE state_code = 15   -- partitioned on state code
+AND no_sites > 1;
