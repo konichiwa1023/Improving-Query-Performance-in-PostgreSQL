@@ -1,0 +1,10 @@
+-- Subquery
+EXPLAIN ANALYZE
+SELECT city
+, sex
+, COUNT(DISTINCT athlete_id) as no_athletes
+, AVG(age) as avg_age
+FROM athletes_summ
+WHERE country_code IN (SELECT olympic_cc FROM demographics WHERE gdp > 10000 and year = 2016)
+AND year = 2016
+GROUP BY city, sex;
