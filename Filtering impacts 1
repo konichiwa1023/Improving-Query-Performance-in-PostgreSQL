@@ -1,0 +1,4 @@
+SELECT city, sex, COUNT(DISTINCT athlete_id), AVG(age) AS avg_age
+FROM athletes_summ
+WHERE city IN ('Rio de Janeiro','Beijing')
+GROUP BY city, sex;
